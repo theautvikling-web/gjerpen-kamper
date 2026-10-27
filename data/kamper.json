@@ -1161,8 +1161,11 @@
    "borte": "Notodden",
    "gjerpenHjemme": true,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    28,
+    25
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Gjerpenhallen",
