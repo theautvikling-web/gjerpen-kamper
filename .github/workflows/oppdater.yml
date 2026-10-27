@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -24,6 +24,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 build.py ut
+      # Lagre kampdataene i repoet når de endrer seg. Det holder repoet aktivt,
+      # ellers slår GitHub av timesjobben etter 60 dager uten aktivitet.
+      - name: Lagre endrede kampdata
+        run: |
+          mkdir -p data
+          python3 -c "import json;d=json.load(open('ut/kamper.json'));d.pop('oppdatert');json.dump(d,open('data/kamper.json','w'),ensure_ascii=False,indent=1)"
+          if [ -n "$(git status --porcelain data)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898900+github-actions[bot]@users.noreply.github.com"
+            git add data && git commit -m "Oppdaterte kampdata" && git push
+          fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ut
