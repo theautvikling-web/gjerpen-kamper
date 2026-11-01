@@ -1407,8 +1407,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    22,
+    21
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Jotunhallen",
