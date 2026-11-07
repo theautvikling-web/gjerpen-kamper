@@ -1631,8 +1631,11 @@
    "borte": "Stag",
    "gjerpenHjemme": true,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    18,
+    33
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Gjerpenhallen",
@@ -1650,8 +1653,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    24,
+    22
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Skienshallen",
@@ -1669,8 +1675,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    18,
+    15
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Bergslihallen",
