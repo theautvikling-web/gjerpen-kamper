@@ -1448,8 +1448,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    17,
+    20
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Fagerlihallen",
@@ -1543,8 +1546,11 @@
    "borte": "Gjerpen 3",
    "gjerpenHjemme": true,
    "internt": true,
-   "res": null,
-   "spilt": false,
+   "res": [
+    16,
+    11
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Gjerpenhallen",
@@ -1562,8 +1568,11 @@
    "borte": "Gjerpen 2",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    16,
+    15
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Fagerlihallen",
@@ -1600,8 +1609,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    16,
+    20
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Bergslihallen",
