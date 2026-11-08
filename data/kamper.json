@@ -1697,8 +1697,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    19,
+    11
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Kveldehallen",
@@ -1716,8 +1719,11 @@
    "borte": "Sandar",
    "gjerpenHjemme": true,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    20,
+    19
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Gjerpenhallen",
@@ -1735,8 +1741,11 @@
    "borte": "Gjerpen 2",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    22,
+    22
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Kragerøhallen",
