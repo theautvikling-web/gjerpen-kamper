@@ -1782,8 +1782,11 @@
    "borte": "Gjerpen 2",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    22,
+    16
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Kveldehallen",
