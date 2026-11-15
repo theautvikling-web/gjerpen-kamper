@@ -1940,8 +1940,11 @@
    "borte": "Kragerø 3",
    "gjerpenHjemme": true,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    11,
+    14
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Gjerpenhallen",
