@@ -107,7 +107,7 @@ function init(){
   $("hjemme").onchange=render;
   render();
 }
-function sesongNavn(){const ds=DATA.kamper.map(k=>k.dato).sort();if(!ds.length)return"";const y=+ds[0].slice(0,4),m=+ds[0].slice(5,7);const s=m>=7?y:y-1;return `${s}/${String(s+1).slice(2)}`}
+function sesongNavn(){const ds=DATA.kamper.map(k=>k.dato).filter(Boolean).sort();if(!ds.length)return"";const y=+ds[0].slice(0,4),m=+ds[0].slice(5,7);const s=m>=7?y:y-1;return `${s}/${String(s+1).slice(2)}`}
 
 function render(){
   $("tab-kommende").setAttribute("aria-pressed",vis==="kommende");
@@ -119,7 +119,7 @@ function render(){
   const grupper=new Map();for(const k of ks){if(!grupper.has(k.dato))grupper.set(k.dato,[]);grupper.get(k.dato).push(k)}
   let h="";
   for(const [d,rad] of grupper){
-    const dag=fmtDag.format(new Date(d+"T12:00:00"));
+    const dag=d&&d!=="null"?fmtDag.format(new Date(d+"T12:00:00")):"Dato ikke satt";
     h+=`<section class="day"><h2>${esc(dag)}</h2><div class="list">`;
     for(const k of rad){
       const tid=k.tid?k.tid.slice(0,2)+":"+k.tid.slice(2):"";

@@ -46,7 +46,7 @@ def main(ut):
         if m["publicResult"] and m["goalsHome"] is not None and m["isPast"]:
             res = [m["goalsHome"], m["goalsAway"]]
         rader.append({
-            "id": m["matchId"], "dato": m["matchDate"][:10],
+            "id": m["matchId"], "dato": (m.get("matchDate") or "")[:10] or None,  # cupkamper kan mangle dato
             "tid": f"{m['matchStartTime']:04d}" if m["matchStartTime"] else None,
             "lag": vårt, "lag2": kort(m["awayTeamDescribingName"]) if hjemme and borte else None, "hjemme": m["homeTeamDisplayName"], "borte": m["awayTeamDisplayName"],
             "gjerpenHjemme": hjemme, "internt": hjemme and borte,
@@ -54,7 +54,7 @@ def main(ut):
             "hall": m["venueUnitName"], "bane": m["activityAreaName"],
             "turnering": m["tournamentName"], "turnid": m["tournamentId"],
         })
-    rader.sort(key=lambda r: (r["dato"], r["tid"] or ""))
+    rader.sort(key=lambda r: (r["dato"] or "9999", r["tid"] or ""))
     data = {"oppdatert": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
             "sesong": sid, "kamper": rader}
     ut = pathlib.Path(ut); ut.mkdir(parents=True, exist_ok=True)
