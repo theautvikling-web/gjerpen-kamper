@@ -1984,8 +1984,11 @@
    "borte": "Gjerpen 2",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    30,
+    22
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Skienshallen",
@@ -2003,8 +2006,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    19,
+    25
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Lundehallen (Nomehallen)",
@@ -2545,6 +2551,25 @@
    "turnid": 449393
   },
   {
+   "id": 8461215,
+   "dato": "2026-12-10",
+   "tid": "1830",
+   "lag": "J14 1",
+   "lag2": null,
+   "hjemme": "Gjerpen",
+   "borte": "Ros",
+   "gjerpenHjemme": true,
+   "internt": false,
+   "res": null,
+   "spilt": false,
+   "utsatt": false,
+   "avlyst": false,
+   "hall": "Gjerpenhallen",
+   "bane": "Gjerpenhallen",
+   "turnering": "Region Sør Cup Jenter 14",
+   "turnid": 449971
+  },
+  {
    "id": 8431384,
    "dato": "2026-12-10",
    "tid": "2000",
@@ -2676,6 +2701,25 @@
    "bane": "Gulsethallen",
    "turnering": "Jenter 13 år A02",
    "turnid": 449306
+  },
+  {
+   "id": 8461434,
+   "dato": null,
+   "tid": null,
+   "lag": "J16 1",
+   "lag2": null,
+   "hjemme": "Kragerø",
+   "borte": "Gjerpen",
+   "gjerpenHjemme": false,
+   "internt": false,
+   "res": null,
+   "spilt": false,
+   "utsatt": false,
+   "avlyst": false,
+   "hall": null,
+   "bane": null,
+   "turnering": "Region Sør Cup Jenter 16",
+   "turnid": 449973
   }
  ]
 }
