@@ -2028,8 +2028,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    36,
+    29
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Nøtterøyhallen",
@@ -2047,8 +2050,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    18,
+    14
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "ROS Arena",
@@ -2066,8 +2072,11 @@
    "borte": "Nesjar",
    "gjerpenHjemme": true,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    25,
+    20
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Gjerpenhallen",
