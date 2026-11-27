@@ -2867,6 +2867,25 @@
    "turnid": 451899
   },
   {
+   "id": 8461434,
+   "dato": "2026-12-09",
+   "tid": "1830",
+   "lag": "J16 1",
+   "lag2": null,
+   "hjemme": "Kragerø",
+   "borte": "Gjerpen",
+   "gjerpenHjemme": false,
+   "internt": false,
+   "res": null,
+   "spilt": false,
+   "utsatt": false,
+   "avlyst": false,
+   "hall": "Kragerøhallen",
+   "bane": "Kragerøhallen bane 1",
+   "turnering": "Region Sør Cup Jenter 16",
+   "turnid": 449973
+  },
+  {
    "id": 8461215,
    "dato": "2026-12-10",
    "tid": "1830",
@@ -3017,25 +3036,6 @@
    "bane": "Gulsethallen",
    "turnering": "Jenter 13 år A02",
    "turnid": 449306
-  },
-  {
-   "id": 8461434,
-   "dato": null,
-   "tid": null,
-   "lag": "J16 1",
-   "lag2": null,
-   "hjemme": "Kragerø",
-   "borte": "Gjerpen",
-   "gjerpenHjemme": false,
-   "internt": false,
-   "res": null,
-   "spilt": false,
-   "utsatt": false,
-   "avlyst": false,
-   "hall": null,
-   "bane": null,
-   "turnering": "Region Sør Cup Jenter 16",
-   "turnid": 449973
   }
  ]
 }
