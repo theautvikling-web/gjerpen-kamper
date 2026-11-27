@@ -15,9 +15,6 @@ concurrency:
 jobs:
   bygg:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -38,5 +35,21 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ut
+  # Publiseringen ligger i en egen jobb. Når den kjørte rett etter opplastingen
+  # i samme jobb, fant GitHub av og til ikke den nettopp opplastede filen.
+  publiser:
+    needs: bygg
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy2.outputs.page_url }}
+    steps:
       - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      # Prøv én gang til etter et halvt minutt hvis første forsøk feilet.
+      - if: steps.deploy.outcome == 'failure'
+        run: sleep 30
+      - id: deploy2
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
