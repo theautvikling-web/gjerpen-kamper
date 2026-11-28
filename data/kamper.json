@@ -2268,8 +2268,11 @@
    "borte": "Gjerpen",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    18,
+    19
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Stavernhallen",
@@ -2287,8 +2290,11 @@
    "borte": "Gjerpen 2",
    "gjerpenHjemme": false,
    "internt": false,
-   "res": null,
-   "spilt": false,
+   "res": [
+    20,
+    19
+   ],
+   "spilt": true,
    "utsatt": false,
    "avlyst": false,
    "hall": "Stavernhallen",
